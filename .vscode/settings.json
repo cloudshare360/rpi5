@@ -1,0 +1,26 @@
+{
+    "files.associations": {
+        "*.sh": "shellscript"
+    },
+    "shellcheck.enable": true,
+    "shellcheck.enableQuickFix": true,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "files.exclude": {
+        "**/speed_test_report_*.txt": false,
+        "**/final_speed_report_*.txt": false
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "README.md": "USAGE.md",
+        "*.sh": "speed_test_report_*.txt, final_speed_report_*.txt"
+    },
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#ffffff",
+        "terminal.background": "#1e1e1e"
+    },
+    "editor.rulers": [80, 120],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+}

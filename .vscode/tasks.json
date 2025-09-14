@@ -1,0 +1,144 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🚀 Complete Drive Speed Report",
+            "type": "shell",
+            "command": "./complete_speed_report.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/read-write-rpi5-drive-speed-test"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "default"
+            },
+            "detail": "Generate a comprehensive drive speed test report"
+        },
+        {
+            "label": "💾 Filesystem Speed Test",
+            "type": "shell",
+            "command": "./filesystem_speed_test.sh",
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/read-write-rpi5-drive-speed-test"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "detail": "Test filesystem performance (container-friendly)"
+        },
+        {
+            "label": "🔧 Hardware Drive Test (Requires Sudo)",
+            "type": "shell",
+            "command": "sudo ./drive_speed_test.sh",
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/read-write-rpi5-drive-speed-test"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "detail": "Test raw hardware drive performance (Raspberry Pi 5 only)"
+        },
+        {
+            "label": "📊 Generate Speed Report to File",
+            "type": "shell",
+            "command": "./complete_speed_report.sh > speed_report_$(date +%Y%m%d_%H%M%S).txt && echo 'Report saved to speed_report_$(date +%Y%m%d_%H%M%S).txt'",
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/read-write-rpi5-drive-speed-test"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "detail": "Generate report and save to timestamped file"
+        },
+        {
+            "label": "🛠️ Make Scripts Executable",
+            "type": "shell",
+            "command": "chmod +x *.sh && echo 'All scripts are now executable!'",
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/read-write-rpi5-drive-speed-test"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "detail": "Set executable permissions on all shell scripts"
+        },
+        {
+            "label": "📁 Open Reports Directory",
+            "type": "shell",
+            "command": "ls -la *.txt 2>/dev/null || echo 'No report files found yet. Run a speed test to generate reports.'",
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/read-write-rpi5-drive-speed-test"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "detail": "List all generated speed test report files"
+        },
+        {
+            "label": "🧪 Quick Performance Test",
+            "type": "shell",
+            "command": "echo '🚀 Running quick performance test...' && dd if=/dev/zero of=quick_test.tmp bs=1M count=50 conv=fdatasync 2>&1 | tail -1 && rm -f quick_test.tmp",
+            "group": "test",
+            "options": {
+                "cwd": "${workspaceFolder}/read-write-rpi5-drive-speed-test"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "detail": "Quick 50MB write speed test using dd"
+        }
+    ]
+}

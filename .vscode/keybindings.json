@@ -1,0 +1,26 @@
+[
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.tasks.runTask",
+        "args": "🚀 Complete Drive Speed Report",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "workbench.action.tasks.runTask",
+        "args": "💾 Filesystem Speed Test",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+q",
+        "command": "workbench.action.tasks.runTask",
+        "args": "🧪 Quick Performance Test",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "workbench.action.tasks.runTask",
+        "args": "🛠️ Make Scripts Executable",
+        "when": "editorTextFocus"
+    }
+]
