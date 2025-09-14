@@ -1,3 +1,4 @@
+Reference: https://itsfoss.com/pi-swap-increase/
 Step 1: Turn off the current swap
 ```
 sudo dphys-swapfile swapoff
