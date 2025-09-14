@@ -1,0 +1,45 @@
+==========================================
+🚀 DRIVE SPEED TEST REPORT
+==========================================
+Generated on: Sun Sep 14 18:33:15 UTC 2025
+Environment: GitHub Codespaces/DevContainer
+System: Linux codespaces-b2b8a0 6.8.0-1030-azure #35~22.04.1-Ubuntu SMP Mon May 26 18:08:30 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+==========================================
+
+📊 FILESYSTEM INFORMATION:
+----------------------------------------
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G   22G  7.8G  74% /vscode
+/dev/sdc1        44G  4.1G   38G  10% /tmp
+/dev/loop4       32G   12G   19G  38% /workspaces
+
+📈 SPEED TEST RESULTS:
+----------------------------------------
+
+🧪 Testing /tmp filesystem (sdc1):
+Size: 100MB | Method: dd with fdatasync
+  ✅ Write Speed: 330.30 MB/s
+  ✅ Read Speed:  6549.88 MB/s
+
+🧪 Testing /workspaces filesystem (loop4):
+Size: 100MB | Method: dd with fdatasync
+  ✅ Write Speed: 83.82 MB/s
+  ✅ Read Speed:  6871.11 MB/s
+
+📋 SUMMARY TABLE:
+----------------------------------------
+Location        Device          Write Speed  Read Speed  
+--------        ------          -----------  ----------  
+/tmp            sdc1            636.9 MB/s   4672.8 MB/s 
+/workspaces     loop4           73.7 MB/s    4398.0 MB/s 
+
+📝 NOTES:
+----------------------------------------
+• Tests performed in container environment (not native hardware)
+• /tmp is backed by SSD storage (sdc1)
+• /workspaces is backed by loop device (loop4)
+• Speeds reflect filesystem performance, not raw disk performance
+• For native Raspberry Pi 5 performance, run on actual hardware
+
+✅ Speed test completed successfully!
+==========================================
