@@ -1,0 +1,33 @@
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Runtime logs directory contents (keep structure, ignore contents)
+logs/*.log
+logs/*.txt
+logs/boot-*
+logs/repair-*
+logs/analysis-*
+
+# Backup files
+*.backup
+*.bak
+*~
+*.orig
+
+# System files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Personal configuration overrides
+config.local
+settings.local
+
+# Test outputs
+test-results/
+coverage/

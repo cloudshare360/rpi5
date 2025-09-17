@@ -1,0 +1,15 @@
+[Unit]
+Description=Boot Monitor - Log system information at boot
+After=multi-user.target
+Wants=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/boot-monitor.sh
+User=root
+StandardOutput=journal
+StandardError=journal
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
