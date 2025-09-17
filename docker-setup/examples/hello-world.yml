@@ -1,0 +1,13 @@
+# Simple Hello World Docker Compose Example
+# This is a basic example to test Docker Compose functionality
+# Usage: docker compose -f hello-world.yml up
+
+services:
+  hello:
+    image: hello-world
+    container_name: hello-world-test
+    
+  # Optional: Add a second service for demonstration
+  hello2:
+    image: hello-world
+    container_name: hello-world-test-2
