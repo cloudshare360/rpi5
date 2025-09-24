@@ -1,0 +1,75 @@
+# Development Environment Example
+# This example shows a typical development setup with database and cache
+# Usage: docker compose -f dev-environment.yml up -d
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: dev-postgres
+    environment:
+      POSTGRES_DB: devdb
+      POSTGRES_USER: devuser
+      POSTGRES_PASSWORD: devpass123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - dev-network
+    
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: dev-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - dev-network
+    command: redis-server --appendonly yes
+    
+  # Adminer (Database management tool)
+  adminer:
+    image: adminer:latest
+    container_name: dev-adminer
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    networks:
+      - dev-network
+    depends_on:
+      - postgres
+
+  # Optional: Nginx for development proxy
+  nginx:
+    image: nginx:alpine
+    container_name: dev-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: unless-stopped
+    networks:
+      - dev-network
+    depends_on:
+      - adminer
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  dev-network:
+    driver: bridge
+
+# To use this example:
+# 1. Run: docker compose -f dev-environment.yml up -d
+# 2. Access Adminer at: http://localhost:8080
+# 3. Database credentials: Server=postgres, User=devuser, Password=devpass123, Database=devdb
+# 4. Redis is available at localhost:6379

@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "🚀 Run Complete Speed Report",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/read-write-rpi5-drive-speed-test/complete_speed_report.sh",
+            "cwd": "${workspaceFolder}/read-write-rpi5-drive-speed-test",
+            "console": "integratedTerminal",
+            "runtimeExecutable": "bash",
+            "runtimeArgs": [
+                "${workspaceFolder}/read-write-rpi5-drive-speed-test/complete_speed_report.sh"
+            ]
+        },
+        {
+            "name": "� Run Filesystem Test",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/read-write-rpi5-drive-speed-test/filesystem_speed_test.sh",
+            "cwd": "${workspaceFolder}/read-write-rpi5-drive-speed-test",
+            "console": "integratedTerminal",
+            "runtimeExecutable": "bash",
+            "runtimeArgs": [
+                "${workspaceFolder}/read-write-rpi5-drive-speed-test/filesystem_speed_test.sh"
+            ]
+        }
+    ]
+}
