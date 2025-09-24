@@ -1,0 +1,90 @@
+[2025-09-23 14:20:17] === RPi5 2800MHz Comprehensive Stress Test ===
+[2025-09-23 14:20:17] Test started at: Tue 23 Sep 14:20:17 CDT 2025
+[2025-09-23 14:20:17] Logging to: /home/sri/rpi5-optimization-backup/stress_test_2800mhz.log
+[2025-09-23 14:20:17] === Pre-Test System Verification ===
+[2025-09-23 14:20:17] Current frequency: 2800MHz (expected: 2800MHz)
+[2025-09-23 14:20:17] Current temperature: 57.6°C
+[2025-09-23 14:20:17] Throttling status: throttled=0x0
+[2025-09-23 14:20:17] SUCCESS: System verified at 2800MHz, ready for stress testing
+[2025-09-23 14:20:17] === Test 1: Intensive CPU Stress Test (6 minutes) ===
+[2025-09-23 14:20:17] Starting temperature: 57.1°C
+[2025-09-23 14:20:17] Running maximum CPU stress (all 4 cores, 100% load)...
+[2025-09-23 14:20:32] Progress 4%: 2800MHz at 67.5°C (max: 67.5°C) | throttled=0x0
+[2025-09-23 14:20:47] Progress 8%: 2800MHz at 67.5°C (max: 67.5°C) | throttled=0x0
+[2025-09-23 14:21:02] Progress 12%: 2800MHz at 69.2°C (max: 69.2°C) | throttled=0x0
+[2025-09-23 14:21:18] Progress 16%: 2800MHz at 67.5°C (max: 69.2°C) | throttled=0x0
+[2025-09-23 14:21:33] Progress 20%: 2800MHz at 69.7°C (max: 69.7°C) | throttled=0x0
+[2025-09-23 14:21:48] Progress 25%: 2800MHz at 69.7°C (max: 69.7°C) | throttled=0x0
+[2025-09-23 14:22:03] Progress 29%: 2800MHz at 68.6°C (max: 69.7°C) | throttled=0x0
+[2025-09-23 14:22:18] Progress 33%: 2800MHz at 69.7°C (max: 69.7°C) | throttled=0x0
+[2025-09-23 14:22:33] Progress 37%: 2800MHz at 69.2°C (max: 69.7°C) | throttled=0x0
+[2025-09-23 14:22:48] Progress 41%: 2800MHz at 69.2°C (max: 69.7°C) | throttled=0x0
+[2025-09-23 14:23:03] Progress 45%: 2800MHz at 71.4°C (max: 71.4°C) | throttled=0x0
+[2025-09-23 14:23:18] Progress 50%: 2800MHz at 70.8°C (max: 71.4°C) | throttled=0x0
+[2025-09-23 14:23:33] Progress 54%: 2800MHz at 70.8°C (max: 71.4°C) | throttled=0x0
+[2025-09-23 14:23:48] Progress 58%: 2800MHz at 69.7°C (max: 71.4°C) | throttled=0x0
+[2025-09-23 14:24:03] Progress 62%: 2800MHz at 70.3°C (max: 71.4°C) | throttled=0x0
+[2025-09-23 14:24:18] Progress 66%: 2800MHz at 71.4°C (max: 71.4°C) | throttled=0x0
+[2025-09-23 14:24:33] Progress 70%: 2800MHz at 71.9°C (max: 71.9°C) | throttled=0x0
+[2025-09-23 14:24:48] Progress 75%: 2800MHz at 71.4°C (max: 71.9°C) | throttled=0x0
+[2025-09-23 14:25:03] Progress 79%: 2800MHz at 71.4°C (max: 71.9°C) | throttled=0x0
+[2025-09-23 14:25:18] Progress 83%: 2800MHz at 70.3°C (max: 71.9°C) | throttled=0x0
+[2025-09-23 14:25:34] Progress 87%: 2800MHz at 71.9°C (max: 71.9°C) | throttled=0x0
+[2025-09-23 14:25:49] Progress 91%: 2800MHz at 70.3°C (max: 71.9°C) | throttled=0x0
+[2025-09-23 14:26:04] Progress 95%: 2800MHz at 70.8°C (max: 71.9°C) | throttled=0x0
+[2025-09-23 14:26:19] Progress 100%: 2800MHz at 64.8°C (max: 71.9°C) | throttled=0x0
+[2025-09-23 14:26:19] SUCCESS: CPU stress test PASSED - Max temp: 71.9°C, No throttling
+[2025-09-23 14:26:19] Cooling down for 30 seconds...
+[2025-09-23 14:26:49] === Test 2: Memory Bandwidth Stress Test (4 minutes) ===
+[2025-09-23 14:26:49] Testing memory bandwidth and stability...
+[2025-09-23 14:27:09] Memory test 8%: CPU: 2800MHz | Temp: 65.9°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:27:29] Memory test 16%: CPU: 2800MHz | Temp: 65.9°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:27:49] Memory test 25%: CPU: 2800MHz | Temp: 63.7°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:28:09] Memory test 33%: CPU: 2800MHz | Temp: 63.7°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:28:29] Memory test 41%: CPU: 2800MHz | Temp: 64.2°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:28:50] Memory test 50%: CPU: 2800MHz | Temp: 64.8°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:29:10] Memory test 58%: CPU: 2800MHz | Temp: 63.1°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:29:30] Memory test 66%: CPU: 2800MHz | Temp: 63.7°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:29:50] Memory test 75%: CPU: 2800MHz | Temp: 64.2°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:30:10] Memory test 83%: CPU: 2800MHz | Temp: 63.7°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:30:30] Memory test 91%: CPU: 2800MHz | Temp: 64.8°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:30:50] Memory test 100%: CPU: 2800MHz | Temp: 61.5°C | Voltage: 1.0000V | Throttling: throttled=0x0
+[2025-09-23 14:30:50] SUCCESS: Memory stress test completed successfully
+[2025-09-23 14:31:05] === Test 3: Mixed CPU+Memory+I/O Stress (5 minutes) ===
+[2025-09-23 14:31:05] Running comprehensive mixed workload...
+[2025-09-23 14:31:30] Mixed workload 8%: CPU: 2800MHz | Temp: 68.6°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:31:55] Mixed workload 16%: CPU: 2800MHz | Temp: 67.5°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:32:21] Mixed workload 25%: CPU: 2800MHz | Temp: 67.0°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:32:46] Mixed workload 33%: CPU: 2800MHz | Temp: 67.5°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:33:11] Mixed workload 41%: CPU: 2800MHz | Temp: 66.4°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:33:36] Mixed workload 50%: CPU: 2800MHz | Temp: 67.0°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:34:01] Mixed workload 58%: CPU: 2800MHz | Temp: 68.1°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:34:26] Mixed workload 66%: CPU: 2800MHz | Temp: 67.5°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:34:51] Mixed workload 75%: CPU: 2800MHz | Temp: 68.1°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:35:16] Mixed workload 83%: CPU: 2800MHz | Temp: 67.5°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:35:41] Mixed workload 91%: CPU: 2800MHz | Temp: 67.5°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:36:06] Mixed workload 100%: CPU: 2800MHz | Temp: 62.6°C | Voltage: 1.0000V | Throttling: throttled=0x0 (max temp: 68.6°C)
+[2025-09-23 14:36:06] SUCCESS: Mixed workload test completed - Max temp: 68.6°C
+[2025-09-23 14:36:16] === Test 4: System Responsiveness Under Load ===
+[2025-09-23 14:36:16] Testing system responsiveness with background load...
+[2025-09-23 14:36:16] Responsiveness test 1/10: .034563663s
+[2025-09-23 14:36:27] Responsiveness test 2/10: .024900945s
+[2025-09-23 14:36:37] Responsiveness test 3/10: .018657454s
+[2025-09-23 14:36:47] Responsiveness test 4/10: .018166413s
+[2025-09-23 14:36:57] Responsiveness test 5/10: .018067893s
+[2025-09-23 14:37:07] Responsiveness test 6/10: .018345618s
+[2025-09-23 14:37:17] Responsiveness test 7/10: .020185910s
+[2025-09-23 14:37:27] Responsiveness test 8/10: .018217599s
+[2025-09-23 14:37:37] Responsiveness test 9/10: .018627861s
+[2025-09-23 14:37:47] Responsiveness test 10/10: .018158969s
+[2025-09-23 14:38:17] SUCCESS: Responsiveness test PASSED - Average: .020s
+[2025-09-23 14:38:17] === 2800MHz Stress Test Final Report ===
+[2025-09-23 14:38:17] Final system state:
+[2025-09-23 14:38:17]   Frequency: 2800MHz
+[2025-09-23 14:38:17]   Temperature: 65.3°C
+[2025-09-23 14:38:17]   Throttling: throttled=0x0
+[2025-09-23 14:38:17] \nDetailed results:
+[2025-09-23 14:38:17] SUCCESS: \n🎉 2800MHz STRESS TEST PASSED!
+[2025-09-23 14:38:17] SUCCESS: System demonstrates excellent stability at 2800MHz overclock
+[2025-09-23 14:38:17] \nTest Summary: 4/4 tests passed
+[2025-09-23 14:38:17] SUCCESS: 🏆 ALL TESTS PASSED - 2800MHz is stable and excellent!

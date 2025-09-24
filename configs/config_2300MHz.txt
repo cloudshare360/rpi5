@@ -1,0 +1,32 @@
+# === RPi5 Overclocking Configuration ===
+# Frequency: 2300MHz (15% overclock)
+# Validation: Estimated stable based on testing progression
+# Expected Max Temperature: ~56-58°C
+# Throttling: None expected
+# Recommended for: Light overclocking, good performance boost
+
+# Core overclocking settings
+arm_freq=2300              # Target 2300MHz (15% overclock)
+over_voltage=7             # Light voltage boost (+0.175V)
+temp_limit=85              # Temperature limit
+force_turbo=1              # Always run at max frequency
+initial_turbo=0            # Disable turbo timeout
+
+# Memory and GPU optimization  
+gpu_freq=775               # Moderate GPU frequency boost
+core_freq=775              # Higher core frequency
+h264_freq=775              # Video processing boost
+isp_freq=775               # Image processing boost
+
+# Memory optimization
+sdram_freq=3300            # Higher memory frequency
+over_voltage_sdram=3       # Light memory voltage boost
+
+# Stability settings
+avoid_warnings=1           # Bypass voltage warnings
+dtparam=watchdog=on        # Enable hardware watchdog
+
+# === End 2300MHz Configuration ===
+# Installation: Copy this entire content to /boot/firmware/config.txt
+# Safety: Always backup your original config.txt before applying
+# Reboot required after changes
