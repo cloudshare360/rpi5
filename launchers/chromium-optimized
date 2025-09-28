@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Optimized Chromium launcher for better tab management
+# ARM64 Raspberry Pi 5 optimizations
+
+CHROMIUM_FLAGS=(
+    # Memory management
+    "--max_old_space_size=2048"
+    "--memory-pressure-off"
+    "--max-active-webgl-contexts=8"
+    "--memory-pressure-thresholds=0.7,0.8,0.9"
+    
+    # Process management
+    "--process-per-site"
+    "--max-renderer-process-limit=4"
+    "--renderer-process-limit=4"
+    
+    # Tab management
+    "--aggressive-tab-unloading"
+    "--enable-memory-info"
+    "--enable-tab-audio-muting"
+    
+    # Performance optimizations
+    "--enable-gpu-rasterization"
+    "--enable-accelerated-video-decode"
+    "--use-gl=egl"
+    "--enable-features=VaapiVideoDecoder"
+    "--disable-features=VizServiceSharingFromGpuProcess"
+    
+    # Network optimizations
+    "--aggressive-cache-discard"
+    "--enable-tcp-fast-open"
+    "--enable-quic"
+    
+    # ARM64 specific optimizations
+    "--enable-hardware-overlays"
+    "--enable-gpu-sandbox"
+    "--disable-dev-shm-usage"
+    
+    # Disable unnecessary features
+    "--disable-background-networking"
+    "--disable-background-timer-throttling"
+    "--disable-renderer-backgrounding"
+    "--disable-backgrounding-occluded-windows"
+    
+    # Security optimizations
+    "--enable-strict-site-isolation"
+    "--site-per-process"
+)
+
+# Launch Chromium with optimized flags
+exec /usr/bin/chromium "${CHROMIUM_FLAGS[@]}" "$@"

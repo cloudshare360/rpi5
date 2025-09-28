@@ -1,0 +1,64 @@
+# RPI5 Optimization Repository - .gitignore
+
+# Log files and runtime data
+*.log
+logs/*.log
+logs/*_*.log
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Analysis files (generated data)
+analysis/*.json
+analysis/*.txt
+analysis/*_analysis_*
+
+# Restore points (system-specific backups)
+restore_points/
+backups/
+
+# Runtime status files
+last_optimization_success.txt
+*.pid
+*.lock
+
+# System-specific configuration files
+*.conf.local
+*.local
+
+# Temporary test files
+/tmp/*
+speedtest*
+test_output*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Performance test outputs
+benchmark_*.txt
+performance_*.log
+
+# User-specific customizations
+custom_settings/
+user_configs/
+
+# Compiled files (if any scripts generate them)
+*.compiled
+*.cache
