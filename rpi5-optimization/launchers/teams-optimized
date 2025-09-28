@@ -1,0 +1,4 @@
+#!/bin/bash
+# Memory-optimized Teams launcher
+export ELECTRON_FLAGS="--memory-pressure-off --max-old-space-size=1024 --enable-aggressive-domstorage-flushing --disable-gpu-compositing --disable-smooth-scrolling"
+exec /opt/teams-for-linux/teams-for-linux "$@"
